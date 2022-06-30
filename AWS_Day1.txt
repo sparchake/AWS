@@ -1,0 +1,120 @@
+Deployment models for cloud computing
+	Cloud deployment refers to the enablement of SaaS (software as a service), PaaS (platform as a service) or IaaS (infrastructure as a service) solutions that may be accessed on demand by end users or consumers.
+
+On premises deployment
+	An on-premises instance is any physical device that is not an Amazon EC2 instance that can run the CodeDeploy agent and connect to public AWS service endpoints.
+
+Hybrid deployment
+	Hybrid deployments are primarily considered by organizations that are invested in their on-premises infrastructure and also want to use AWS.
+ This approach allows organizations to augment on-premises resources and creates an alternative path to AWS rather than an immediate full migration.
+
+What is cloud computing?
+	On-demand delivery of IT resources and applications through the internet with pay-as-you-go pricing.
+
+What is another name for on-premises deployment?
+	Private cloud deployment
+
+What does the scale of cloud computing help you to save costs?
+	The aggregated cloud usage from a large number of customers results in lower pay-as-you-go prices.
+
+
+##Amazon Elastic Compute Cloud(Amazon EC2)
+	Amazon Elastic Compute Cloud (Amazon EC2) provides scalable computing capacity in the Amazon Web Services (AWS) Cloud. Using Amazon EC2 eliminates your need to invest in hardware up front, so you can develop and deploy applications faster. You can use Amazon EC2 to launch as many or as few virtual servers as you need, configure security and networking, and manage storage. Amazon EC2 enables you to scale up or down to handle changes in requirements or spikes in popularity, reducing your need to forecast traffic.
+	
+	Features of amazon EC2:
+		Amazon EC2 provides the following features:
+
+		->Virtual computing environments, known as instances
+		->Preconfigured templates for your instances, known as Amazon Machine Images (AMIs), that package the bits you need for your server (including the operating system and additional software)
+		  Various configurations of CPU, memory, storage, and networking capacity for your instances, known as instance types
+		->Secure login information for your instances using key pairs (AWS stores the public key, and you store the private key in a secure place)
+		->Storage volumes for temporary data that's deleted when you stop, hibernate, or terminate your instance, known as instance store volumes
+		->Persistent storage volumes for your data using Amazon Elastic Block Store (Amazon EBS), known as Amazon EBS volumes
+		->Multiple physical locations for your resources, such as instances and Amazon EBS volumes, known as Regions and Availability Zones
+		->A firewall that enables you to specify the protocols, ports, and source IP ranges that can reach your instances using security groups
+		->Static IPv4 addresses for dynamic cloud computing, known as Elastic IP addresses
+		->Metadata, known as tags, that you can create and assign to your Amazon EC2 resources
+		  Virtual networks you can create that are logically isolated from the rest of the AWS Cloud, and that you can optionally connect to your own network, known as virtual private clouds (VPCs).
+
+##MCQ Questions
+
+	Q 1: According to AWS, what is the benefit of Elasticity?
+		Create systems that scale to the required capacity based on changes in demand.
+			Explanation : 
+			The concept of Elasticity is the means of an application having the ability to scale up and scale down based on demand. An example of such a service is the Autoscaling service
+
+	Q2: Which tool can you use to forecast your AWS spending?
+		AWS Cost Explorer.
+			Explanation : 
+			Cost Explorer is a free tool that you can use to view your costs. You can view data up to the last 12 months. You can forecast how much you are likely to spend for the next 12 months and get recommendations for what Reserved Instances to purchase. You can use Cost Explorer to see patterns in how much you spend on AWS resources over time, identify areas that need further inquiry, and see trends that you can use to understand your costs. You also can specify time ranges for the data and view time data by day or by month.
+
+	Q3: A business analyst would like to move away from creating complex database queries and static spreadsheets when generating regular reports for high-level management. They would like to publish insightful, graphically appealing reports with interactive dashboards. Which service can they use to accomplish this?
+		Amazon Quicksight.
+			Explanation : 
+			Amazon QuickSight is the most appropriate service in the scenario. It is a fully-managed service that allows for insightful business intelligence reporting with creative data delivery methods, including graphical and interactive dashboards. QuickSight includes machine learning that allows users to discover inconspicuous trends and patterns on their datasets.
+
+	Q4. What is the AWS feature that enables fast, easy and secure transfers of files over long distances between your client and your Amazon S3 bucket?
+		Amazon S3 Transfer Acceleration
+			Explaination:
+			Amazon S3 Transfer Acceleration enables fast, easy, and secure transfers of files over long distances between your client and an S3 bucket. Transfer Acceleration takes advantage of Amazon CloudFront’s globally distributed edge locations. As the data arrives at an edge location, data is routed to Amazon S3 over an optimized network path.
+	
+	Q5: A web administrator maintains several public and private web-based resources for an organisation. Which service can they use to keep track of the expiry dates of SSL/TLS certificates as well as updating and renewal?
+		AWS Certificate manager.
+			Explanation : 
+			The AWS Certificate Manager allows the web administrator to maintain one or several SSL/TLS certificates, both private and public certificates including their update and renewal so that the administrator does not worry about the imminent expiry of certificates. 
+
+	Q6: Your design team is planning to design an application that will be hosted on the AWS Cloud. One of their main non-functional requirements is given below:
+	    Reduce inter-dependencies so failures do not impact other components.
+            Which of the following concepts does this requirement relate to?
+		Ans - Decoupling.
+			Explanation : 
+			The entire concept of decoupling components ensures that the different components of applications can be managed and maintained separately. If all components are tightly coupled, the entire application would go down when one component goes down. Hence it is always a better practice to decouple application components.
+
+	Q7: A manufacturing firm has recently migrated their application servers to the Amazon EC2 instance. The IT Manager is looking for the details of upcoming scheduled maintenance activities which AWS would be performing on AWS resources, that may impact the services on these EC2 instances.
+	     Which of the following services can alert you about the changes that can affect resources in your account? 
+		A. AWS Organizations
+		B. AWS Personal Health Dashboard
+		C. AWS Trusted Advisor
+		D. AWS Service Health Dashboard
+
+		Ans – AWS Personal Health Dashboard
+			Explanation : 
+			AWS Personal Health Dashboard provides alerts for AWS services availability & performance which may impact resources deployed in your account. Customers get emails & mobile notifications for scheduled maintenance activities which might impact services on these AWS resources.
+
+	Q8: Which of the following can be used to protect against DDoS attacks? Choose 2 answers from the options given below.
+		A. AWS EC2
+		B. AWS RDS
+		C. AWS Shield
+		D. AWS Shield Advanced
+
+		Answer – AWS Shield and AWS Shield Advanced.
+
+			Explanation:
+			AWS Shield – All AWS customers benefit from the automatic protections of AWS Shield Standard, at no additional charge. AWS Shield Standard defends against most common, frequently occurring network and transport layer DDoS attacks that target your web site or applications
+
+			AWS Shield Advanced – For higher levels of protection against attacks targeting your web applications running on Amazon EC2, Elastic Load Balancing (ELB), CloudFront, and Route 53 resources, you can subscribe to AWS Shield Advanced. AWS Shield Advanced provides expanded DDoS attack protection for these resources.  
+
+	Q9: A company wants to utilize AWS storage. For them, low storage cost is paramount. The data is rarely retrieved and a data retrieval time of 13-14 hours is acceptable for them. What is the best storage option to use?
+		A. Amazon S3 Glacier
+		B. S3 Glacier Deep Archive
+		C. Amazon EBS volumes
+		D. AWS CloudFront
+
+		Answer – S3 Glacier Deep Archive
+
+		Explanation : 
+
+		S3 Glacier Deep Archive offers the lowest cost storage in the cloud, at prices lower than storing and maintaining data in on-premises magnetic tape libraries or archiving data offsite.
+		It expands our data archiving offerings, enabling you to select the optimal storage class based on storage and retrieval costs, and retrieval times.
+		Option B is correct because S3 Glacier Deep Archive offers low-cost storage and retrieval time doesn’t matter for the company. If the question asks for fast retrieval time then S3 Glacier would be correct. 
+
+	Q10: Which AWS service provides a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability?
+		A. AWS RDS
+		B. DynamoDB
+		C. Oracle RDS
+		D. Elastic Map Reduce
+
+		Answer: – DynamoDB.
+
+		Explanation : 
+		DynamoDB is a fully managed NoSQL offering provided by AWS. It is now available in most regions for users to consume.
