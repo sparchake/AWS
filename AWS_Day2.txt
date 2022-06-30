@@ -1,0 +1,122 @@
+Billing and Pricing in AWS
+
+AWS Billing Servicesi:
+	AWS Billing and Cost Management is a service that you can find within your AWS account that lets users manage the billing and cost information of all the recourses from their AWS account. There are multiple services under the AWS Cost Management group. You can view all the services by navigating to the AWS Console and browse AWS Cost Management under Services.
+
+Key concepts of AWS Billing Services
+	
+	Using the correct pricing model for your application:
+		As it goes by the name, when you start building your applications, or rather when you deploy your applications for the first time to AWS, you should start thinking about the right pricing model that will suffice the needs of your application. For example, let us consider an Elastic Compute Cloud instance (EC2) that enables us to run virtual machines on the cloud. There are four types of pricing models available for such an EC2 instance:
+		On-Demand Pricing:
+		In such a model, you need to pay for the compute or the database for the time is running. You don’t have any long term commitments, and you can terminate the instance when your task is completed
+		Savings Plans:
+		These are savings plans offered by AWS to its customers that plan to run an EC2 instance for a longer duration, such as 1 or 3 years. In such a case you need to pay the amount upfront and it will save you lots as compared to the previous plan
+		Spot Instances:
+		These are special pricing models available only for EC2 instances in which there is a provision to save up to 90% of the on-demand pricing model. However, the catch here is that the instances are available on spare compute capacity and your instance can be stopped whenever the capacity is over
+		Reserved Instances:
+		These are special pricing models similar to that of the savings plans, however, the size, operating system and tenancy remain fixed for this pricing model.
+
+AWS Billing Services for Cost Management:
+	AWS Cost Explorer:
+	It is one of the most frequently used services to track how are your services being charged. By default, there is a report that shows a breakdown of the costs per day within your AWS Account. You can also slice and dice the data using the AWS Cost Explorer with a number of dimensions such as Service, Region, etc. All these reports help you identify your costs for the existing month and also provides a forecast of the month-end charges. The forecasted charges also take into account some of the one-time charges from the previous month and thus might not be accurate
+	
+	Budget Reports:
+	You can also keep a check on your costs by assigning a specific budget amount that you want to be within. Once the budget is defined, you can keep track of how your services are costly as compared to the budgeted amount. You can also set up an automated alert when your actual costs reach up to a certain level of the budgeted amount. This ensures that you do not pay for overuse of the services. Even in case of any services being billed without your attention, you can still stop the services so that you won’t end up getting high bill amounts.
+
+	AWS Cost Anomaly Detection:
+	Sometimes your credentials might get compromised and that might lead to unforeseen costs or services being started up without your knowledge. To tackle such scenarios, AWS uses Machine Learning to continually monitor the services within your account and whenever there are any malicious activities, it raises alerts and notifies the AWS customers to take immediate actions.
+
+	AWS Pricing Calculator:
+	This is a web-based service that enables AWS customers to estimate the cost of running services for a particular use case. You can add and remove multiple services that will be required to support your use case and then a consolidated bill of all the services will be made available. This is helpful for customers to get an idea about their budget and whether they should move ahead with the services or not.
+
+	Migration Evaluator:
+	This service is used to determine the Total Cost of Ownership (TCO) for a customer. Usually used for customers who have their systems running on on-premise servers or private data centers and planning to move to AWS.
+
+MCQ Questions
+
+	Q1.AWS supports which of the following methods to add security to Identity and Access Management (IAM) users? (Choose two.)
+	A. Implementing Amazon Rekognition
+	B. Using AWS Shield-protected resources
+	C. Blocking access with Security Groups
+	D. Using Multi-Factor Authentication (MFA)
+	E. Enforcing password strength and expiration
+
+	Answer: using multi-factor authentication & Enforcing password strength and expiration
+
+	Q2.Which AWS services should be used for read/write of constantly changing data? (Choose two.)
+	A. Amazon Glacier
+	B. Amazon RDS
+	C. AWS Snowball
+	D. Amazon Redshift
+	E. Amazon EFS
+
+	Answer: Amazon RDS and Amazon EFS
+
+	Q3.What is one of the advantages of the Amazon Relational Database Service (Amazon RDS)?
+	A. It simplifies relational database administration tasks.
+	B. It provides 99.99999999999% reliability and durability.
+	C. It automatically scales databases for loads.
+	D. It enables users to dynamically adjust CPU and RAM resources.
+
+	Answer: It simplifies relational database administration tasks.
+
+	Q4.A customer needs to run a MySQL database that easily scales.
+	   Which AWS service should they use?
+	A. Amazon Aurora
+	B. Amazon Redshift
+	C. Amazon DynamoDB
+	D. Amazon ElastiCache
+
+	Answer: Amazon Aurora
+
+	Q5.Which of the following components of the AWS Global Infrastructure consists of one or more discrete data centers interconnected through low latency links?
+	A. Availability Zone
+	B. Edge location
+	C. Region
+	D. Private networking
+
+	Answer:  Availability Zone
+
+	Q6.Which of the following is a shared control between the customer and AWS?
+	A. Providing a key for Amazon S3 client-side encryption
+	B. Configuration of an Amazon EC2 instance
+	C. Environmental controls of physical AWS data centers
+	D. Awareness and training
+
+	Answer: Awareness and training
+
+	Q7.How many Availability Zones should compute resources be provisioned across to achieve high availability?
+	A. A minimum of one
+	B. A minimum of two
+	C. A minimum of three
+	D. A minimum of four or more
+
+	Answer: A minimum of two
+
+	Q8.One of the advantages to moving infrastructure from an on-premises data center to the AWS Cloud is:
+	A. it allows the business to eliminate IT bills.
+	B. it allows the business to put a server in each customerג€™s data center.
+	C. it allows the business to focus on business activities.
+	D.it allows the business to leave servers unpatched.
+
+	Answer: it allows the business to focus on business activities.
+
+	Q9.What is the lowest-cost, durable storage option for retaining database backups for immediate retrieval?
+	A. Amazon S3
+	B. Amazon Glacier
+	C. Amazon EBS
+	D. Amazon EC2 Instance Store
+
+	Answer:  Amazon S3
+
+	Q10.Which AWS IAM feature allows developers to access AWS services through the AWS CLI?
+	A. API keys
+	B. Access keys
+	C. User names/Passwords
+	D. SSH keys
+
+	Answer: Access keys
+
+
+
+	
