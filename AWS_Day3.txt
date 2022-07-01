@@ -1,0 +1,150 @@
+##Amazon Simple Storage Service (S3):-
+	Amazon S3 is object storage built to store and retrieve any amount of data from anywhere – web sites and mobile apps, corporate applications, and data from IoT sensors or devices.
+	You can store any type of file in S3.
+	Typical use cases include:
+	Backup and Storage – Provide data backup and storage services for others.
+	Application Hosting – Provide services that deploy, install, and manage web applications.
+	Media Hosting – Build a redundant, scalable, and highly available infrastructure that hosts video, photo, or music uploads and downloads.
+	Software Delivery – Host your software applications that customers can download.
+	Static Website – you can configure a static website to run from an S3 bucket.
+
+	There are seven S3 storage classes.
+
+	S3 Standard (durable, immediately available, frequently accessed).
+	S3 Intelligent-Tiering (automatically moves data to the most cost-effective tier).
+	S3 Standard-IA (durable, immediately available, infrequently accessed).
+	S3 One Zone-IA (lower cost for infrequently accessed data with less resilience).
+	S3 Glacier Instant Retrieval (data that is rarely accessed and requires retrieval in milliseconds).
+	S3 Glacier Flexible Retrieval (archived data, retrieval times in minutes or hours).
+	S3 Glacier Deep Archive (lowest cost storage class for long term retention).
+
+##AWS Snowball:-
+	With AWS Snowball (Snowball), you can transfer hundreds of terabytes or petabytes of data between your on-premises data centers and Amazon Simple Storage Service (Amazon S3).
+	Uses a secure storage device for physical transportation.
+	AWS Snowball Client is software that is installed on a local computer and is used to identify, compress, encrypt, and transfer data.
+	Uses 256-bit encryption (managed with the AWS KMS) and tamper-resistant enclosures with TPM.
+	The table below describes the AWS Snow offerings at a high-level:
+	S3 is designed to deliver 99.999999999% durability, and stores data for millions of applications used by market leaders in every industry.
+	S3 provides comprehensive security and compliance capabilities that meet even the most stringent regulatory requirements.
+	S3 gives customers flexibility in the way they manage data for cost optimization, access control, and compliance.
+
+##Amazon Elastic Block Store (EBS):-
+	Amazon Elastic Block Store (Amazon EBS) provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud.
+	Each Amazon EBS volume is automatically replicated within its Availability Zone to protect you from component failure, offering high availability and durability.
+	Amazon EBS volumes offer the consistent and low-latency performance needed to run your workloads. With Amazon EBS, you can scale your usage up or down within minutes – all while paying a low price for only what you provision.
+
+##nstance Store Volumes:-
+	Instance store volumes are high performance local disks that are physically attached to the host computer on which an EC2 instance runs.
+	Instance stores are ephemeral which means the data is lost when powered off (non-persistent).
+	Instances stores are ideal for temporary storage of information that changes frequently, such as buffers, caches, or  scratch data.
+	Instance store volume root devices are created from AMI templates stored on S3.
+	Instance store volumes cannot be detached/reattached.
+
+##Amazon Elastic File System (EFS):-
+	EFS is a fully managed service that makes it easy to set up and scale file storage in the Amazon Cloud.
+	Good for big data and analytics, media processing workflows, content management, web serving, home directories etc.
+	EFS uses the NFS protocol.
+	Pay for what you use (no pre-provisioning required).
+	Can scale up to petabytes.
+	EFS is elastic and grows and shrinks as you add and remove data.
+	Can concurrently connect 1 to 1000s of EC2 instances, from multiple AZs.
+	A file system can be accessed concurrently from all AZs in the region where it is located.
+	By default you can create up to 10 file systems per account.
+	On-premises access can be enabled via Direct Connect or AWS VPN.
+
+##AWS Storage Gateway:-
+	AWS Storage Gateway is a hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage.
+	Customers use Storage Gateway to simplify storage management and reduce costs for key hybrid cloud storage use cases.
+	These include moving backups to the cloud, using on-premises file shares backed by cloud storage, and providing low latency access to data in AWS for on-premises applications.
+	To support these use cases, Storage Gateway offers three different types of gateways:
+		File Gateway – provides file system interfaces to on-premises servers.
+		Volume Gateway – provides block-based access for on-premises servers.
+		Tape Gateway – provides a virtual tape library that is compatible with common backup software (block and file interfaces).
+
+##Questions
+
+Q1: Which AWS service provides a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability?
+A. AWS RDS
+B. DynamoDB
+C. Oracle RDS
+D. Elastic Map Reduce
+
+Answer: – DynamoDB
+
+Q2: In the shared responsibility model for infrastructure services, such as Amazon Elastic Compute Cloud, which of the below two are customers responsibility?
+A. Network infrastructure
+B. Amazon Machine Images (AMIs)
+C. Virtualization infrastructure
+D. Physical security of hardware
+E. Policies and configuration
+
+Answer: Amazon Machine Images(AMIs) & POlicies and Configuration
+
+3: AWS offers two savings plans to enable more savings and flexibility for its customers, namely, compute saving plans and EC2 Instance Savings plans.
+Which of the below statement is FALSE regarding Saving Plans?
+A. Capacity Reservations are not provided with Saving Plans.
+B. Savings Plans are available for all the regions.
+C. Savings plans will apply on ‘On-Demand Capacity Reservations’ that customers can allocate for their needs.
+D. The prices for Savings Plans do not change based on the amount of hourly commitment.
+
+Answer: Savings plans are available for all the regions
+
+Q4: Which of the following LightSail Wizard allows the customers to “create a copy of the LightSail instance in EC2”?
+A. LightSail Backup
+B. LightSail Copy
+C. Upgrade to EC2
+D. LightSail-EC2 snapshot
+
+Answer: Upgrade to EC2
+
+Q5. Cosmo Property has its data centres on-premises. They are planning to move to the AWS cloud. What is the primary value proposition of cloud computing?
+A. Reduced effort and investment in staff training
+B. Less expenditure as changing from Operational Expenses to Capital Expenses
+C. Less expenditure as changing from Capital Expenses to Operational Expenses
+D. Resource sharing and parallel executions of applications on multiple on-premises data centres
+
+Answer: Less expenditure as changing from Capital Expenses to Operational Expenses
+
+Q6.According to the Shared Responsibility Model, what is Sun Solar’s responsibility for various AWS resources?
+A. Encryption of Data
+B. Infrastructure Security
+C. Network Cabling
+D. Hardware Firmware
+
+Answer: Encryption of data
+
+Q7.Amazon Route 53 enables users to:
+A. encrypt data in transit
+B. register DNS domain names
+C. generate and manage SSL certificates
+D. establish a dedicated network connection to AWS
+
+Answer: register DNS domain names
+
+Q8.Which AWS service should be used to create a billing alarm?
+A. AWS Trusted Advisor
+B. AWS CloudTrail
+C. Amazon CloudWatch
+D. Amazon QuickSight
+
+Answer: Amazon cloudwatch
+
+Q9.Users are reporting latency when connecting to a website with a global customer base.
+Which AWS service will improve the customer experience by reducing latency?
+A. Amazon CloudFront
+B. AWS Direct Connect
+C. Amazon EC2 Auto Scaling
+D. AWS Transit Gateway
+
+Answer: Amazon Cloudfront
+
+Q10.A company wants to use an AWS service to monitor the health of application endpoints, with the ability to route traffic to healthy regional endpoints to improve application availability.
+Which service will support these requirements?
+A. Amazon Inspector
+B. Amazon CloudWatch
+C. AWS Global Accelerator
+D. Amazon CloudFront
+
+Answer: AWS Global Accelerator
+
+
