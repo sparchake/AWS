@@ -1,0 +1,117 @@
+##Questions
+
+1. Your company is planning to move to the AWS Cloud. You need to give a presentation on the cost perspective when moving existing resources to the AWS Cloud. When it comes to Amazon EC2, which of the following is an advantage when it comes to the cost perspective.
+	A.Having the ability of automated backups of the EC2 instance, so that you don’t need to worry about the maintenance costs.
+	B.The ability to choose low cost AMI’s to prepare the EC2 Instances.
+	C.The ability to only pay for what you use.
+	D.Ability to tag instances to reduce the overall cost.
+	Answer: The ability to only pay for what you use
+
+2. What is a Database service?
+	A.Amazon Route 53
+	B.Amazon EC2
+	C.Amazon ElastiCache
+	D.Amazon CloudWatch
+	Answer: Amazon ElastiCache
+
+4. You have a devops team in your current organization structure. They are keen to know if there is any service available in AWS which can be used to manage infrastructure as code.Which of the following can be met with such a requirement
+	A.Using AWS Cloudformation
+	B.Using AWS Config
+	C.Using AWS Inspector
+	D.Using AWS Trusted Advisor
+	Answer: Using AWS Cloudformation
+
+5. What does the AWS Storage Gateway provide?
+	A.it provides data security features by enabling an encrypted data storage on Amazon S3.
+	B.It provides an encrypted SSL endpoint for backups in the cloud
+	C.It provides seamless integration with data security features between your on-premises IT envi-ronment and the Amazon Web Services (AWS) storage infrastructure.
+	D.It provides a backup solution to on-premises Cloud storage.
+	Answer: It provides seamless integration with data security features between your on-premises IT envi-ronment and the Amazon Web Services (AWS) storage infrastructure.
+
+6. Which of the following is not an IAM best practice?
+	A.Delete user accounts not in use
+	B.Attach policies to individual users
+	C.Manage permissions by adding users to groups
+	D.Enable MFA on user accounts
+	Answer: Attach policies to individual users
+
+7. You work for a hospital that is required to store patient's medical records for a minimum of 10 years. Most of these records will never be accessed but must be made available upon request (within a few hours). What is the most cost-effective storage option?
+	A.AWS Import/Export
+	B.Reduced Redundancy Storage
+	C.Glacier
+	D.S3 Infrequent access
+	Answer: Glacier
+
+8.8. RDS Reserved instances are available for multi-AZ deployments.
+	False
+	True
+	Answer: True
+
+9. Which AWS CLI command should I use to create a snapshot of an EBS volume?
+	A.aws ec2 create-snapshot
+​	B.aws ec2 fresh-snapshot
+	C.aws ec2 deploy-snapshot
+	D.aws ec2 new-snapshot
+	Answer: aws ec2 create-snapshot
+
+10. Which of the following is the responsibility of AWS according to the Shared Security Model?Choose 3 answers from the options given below
+	A.Implementing service organization Control (SOC) standards
+	B.Securing edge locations
+	C.Monitoring physical device security
+	D.All of above
+	Answer: All of above
+
+11. Is it possible to perform actions on an existing Amazon EBS Snapshot?
+	A.Yes, through the AWS APIs, CLI, and AWS Console
+	B.No
+​	C.It depends on the region
+	D.EBS does not have snapshot functionality
+	Answer: ​Yes, through the AWS APIs, CLI, and AWS Console
+
+12. Amazon's ElastiCache uses which two engines?
+	A.Reddit & Memcrush
+	B.Redis & Memcached
+	C.MyISAM & InnoDB
+	D.Redis & Memory
+	Answer: Redis & Memcached
+
+13. Currently your organization has an operational team that takes care of ID management in their on-premise data center. They now also need to manage users and groups created in AWS. Which of the following AWS tools would they need to use for performing this management function.
+	A.AWS Config
+	B.AWS Cloud Trail
+	C.AWS Key Management Service (AWS KMS)
+	D.AWS Identity and Access Management (IAM)
+	Answer: AWS Identity and Access Management (IAM)
+
+16. What AWS service allows you to treat your infrastructure as code?
+	A.Config
+	B.Elastic BeanStalk
+	C.Cloudformation
+	D.Cloudwatch
+	Answer: Cloudformation
+
+18. Which AWS monitoring service is EC2 publishing metrics at regular intervals to?
+	A.Amazon CloudFront
+	B.Amazon CloudSearch
+	C.Amazon CloudWatch
+	D.Amazon Config
+	Answer: Amazon CloudWatch
+
+19. Which region in AWS Global Infrastructure has only 1 Availability Zone?
+	A.Sao Paulo
+	B.Ireland
+	C.Osaka
+	D.Seoul
+	Answer: Osaka
+
+20. What happens to the I/O operations of a single-AZ RDS instance during a database snapshot or backup?
+	A.Nothing.
+	B.I/O operations will function normally.
+	C.I/O operations to the database are sent to a Secondary instance of a Multi-AZ installation (for the duration of the snapshot.)
+	D.I/O may be briefly suspended while the backup process initializes (typically under a few seconds), and you may experience a brief period of elevated latency.
+	Answer: I/O may be briefly suspended while the backup process initializes (typically under a few seconds), and you may experience a brief period of elevated latency.
+
+
+
+
+
+
